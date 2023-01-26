@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-image {
+    height: 35px;
+    width: 120px;
+  }
+  .unorder-list {
+    display: flex;
+  }
+  .nav-link {
+    text-decoration: none;
+    font-family: Roboto;
+  }
+  .list-items {
+    list-style-type: none;
+    margin: 10px;
+    color: black;
+  }
+  .logout-items {
+    list-style-type: none;
+    margin: 10px;
+    color: white;
+  }
+  .logout-button {
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    font-family: Roboto;
+    background-color: #0967d2;
+    border: 0px;
+    border-radius: 8px;
+  }
+  

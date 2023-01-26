@@ -1,0 +1,21 @@
+.home-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Roboto;
+  }
+  .text-container {
+    width: 650px;
+  }
+  .home-image {
+    width: 500px;
+  }
+  .button {
+    background-color: #0967d2;
+    height: 37px;
+    width: 130px;
+    border: 0px;
+    border-radius: 8px;
+    color: white;
+  }
+  
