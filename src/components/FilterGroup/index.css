@@ -1,0 +1,75 @@
+.filters-group-container {
+    margin-top: 16px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .filters-group-container {
+      width: 30%;
+      max-width: 350px;
+      margin-top: 48px;
+      flex-shrink: 0;
+    }
+  }
+  
+  /* Write your CSS here */
+  .active {
+    color: #0967d2;
+  }
+  
+  .heading {
+    font-size: 20px;
+  }
+  
+  .category-list {
+    list-style-type: none;
+    margin-bottom: 5px;
+  }
+  .rating-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+  }
+  .rating-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .category-btn {
+    border: 0px;
+    background-color: white;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .rating-button {
+    border: 0px;
+    background-color: white;
+  }
+  .rating-image {
+    height: 38px;
+    width: 170px;
+  }
+  .desc {
+    font-weight: bold;
+    color: gray;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    width: 250px;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .input {
+    border: 0px;
+    background-color: #f1f5f9;
+    padding: 10px;
+  }
+  

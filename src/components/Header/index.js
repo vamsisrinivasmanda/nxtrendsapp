@@ -3,11 +3,7 @@ import {Link, withRouter} from 'react-router-dom'
 import './index.css'
 
 const Header = props => {
-  const {history} = props
-  const logoutbtn = () => {
-    Cookies.remove('jwt_token')
-    history.replace('/login')
-  }
+  
   return (
     <nav className="nav-header">
       <div className="nav-content">
