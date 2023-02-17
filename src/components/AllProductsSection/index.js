@@ -64,6 +64,12 @@ const ratingsList = [
       'https://assets.ccbp.in/frontend/react-js/rating-one-star-img.png',
   },
 ]
+const apiStatusofActiveView = {
+  inital: 'INITAL ',
+  success: 'SUCCESS',
+  failure: 'FAILURE',
+  loading: 'LOADING',
+}
 
 class AllProductsSection extends Component {
   state = {
@@ -73,6 +79,7 @@ class AllProductsSection extends Component {
     category: '',
     titleSearch: '',
     rating: '',
+    apiStatus: apiStatusofActiveView.inital,
   }
 
   componentDidMount() {
@@ -109,9 +116,11 @@ class AllProductsSection extends Component {
       this.setState({
         productsList: updatedData,
         isLoading: false,
+        apiStatus: apiStatusofActiveView.success,
       })
-    } else {
-      this.failureView()
+    }
+    if (response.status === 401) {
+      this.setState({apiStatus: apiStatusofActiveView.failure})
     }
   }
 
@@ -193,8 +202,22 @@ class AllProductsSection extends Component {
     this.setState({category: '', rating: '', titleSearch: ''}, this.getProducts)
   }
 
+  renderallProducts = () => {
+    const {apiStatus} = this.state
+    switch (apiStatus) {
+      case apiStatusofActiveView.success:
+        return this.renderProductsList()
+      case apiStatusofActiveView.failure:
+        return this.failureView()
+      case apiStatusofActiveView.loading:
+        return this.renderLoader()
+      default:
+        return null
+    }
+  }
+
   render() {
-    const {isLoading} = this.state
+    const {apiStatus} = this.state
 
     return (
       <div className="all-products-section">
@@ -208,7 +231,7 @@ class AllProductsSection extends Component {
           resetFilterData={this.resetFilterData}
         />
 
-        {isLoading ? this.renderLoader() : this.renderProductsList()}
+        {this.renderallProducts()}
       </div>
     )
   }
