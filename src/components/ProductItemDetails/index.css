@@ -1,0 +1,136 @@
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1px;
+  
+    height: 550px;
+    width: 400px;
+    font-family: Roboto;
+  }
+  .product-image {
+    height: 550px;
+    width: 400px;
+    margin-right: 20px;
+    border-radius: 13px;
+  }
+  .rating {
+    color: white;
+    padding-left: 10px;
+  }
+  .reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .star-rating-container {
+    background-color: #3b82f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 45px;
+    border-radius: 5px;
+  }
+  .star-image {
+    height: 20px;
+    width: 23px;
+    padding-right: 10px;
+  }
+  .reviews {
+    color: #1e293b;
+    font-size: 13px;
+  }
+  .desc {
+    font-size: 15px;
+    color: #616e7c;
+    font-weight: bold;
+  }
+  .availablity-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto;
+  }
+  .brand-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto;
+  }
+  .available {
+    font-weight: bold;
+    font-size: 13px;
+    color: #1e293b;
+  }
+  
+  .highlight {
+    font-family: Roboto;
+    color: #616e7c;
+    font-weight: normal;
+    margin-left: 5px;
+  }
+  .brand {
+    font-weight: bold;
+    font-size: 13px;
+    color: #1e293b;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button {
+    border: 0px;
+    background-color: white;
+  }
+  .cart-button {
+    color: white;
+    background-color: #3b82f6;
+    height: 38px;
+    width: 130px;
+    border: 0px;
+    border-radius: 5px;
+  }
+  
+  .similar-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .similar-prdt-heading {
+    align-self: flex-start;
+    margin-left: 180px;
+  }
+  .error-view-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .error-found-image {
+    width: 700px;
+  }
+  .continue-button {
+    background-color: #3b82f6;
+    border: 0px;
+    border-radius: 8px;
+    color: white;
+    height: 37px;
+    width: 130px;
+  }
+  
